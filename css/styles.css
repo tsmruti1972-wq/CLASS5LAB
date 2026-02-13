@@ -1,0 +1,113 @@
+:root{
+  --body-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --heading-font: 'Merriweather', serif;
+  --bg:#ffffff; --card:#ffffff; --muted:#6b6b6b; --accent1:#8C1515; --accent2:#C99700; --glass:rgba(0,0,0,0.04);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@400;700&display=swap');
+*{box-sizing:border-box}
+.site-body{margin:0;font-family:var(--body-font);color:#111;background:linear-gradient(180deg,#fff 0%, #fbfbfb 100%);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.site-header{background:linear-gradient(180deg,var(--accent1),#6e1212);padding:12px 0;position:fixed;top:0;left:0;right:0;z-index:60;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{color:#fff;font-weight:700;text-decoration:none;font-size:1.1rem;display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(180deg,var(--accent1),#6e1212);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+.brand-text{font-weight:700;letter-spacing:0.5px;text-transform:uppercase;font-family:var(--heading-font)}
+.nav{display:flex;gap:18px}
+.nav a{color:#fff;text-decoration:none;font-family:var(--body-font);font-weight:600}
+#nav-toggle,#nav-toggle-2{display:none;background:transparent;border:0;color:#fff;font-size:1.3rem}
+
+.hero{padding:64px 0}
+.student-hero{background:linear-gradient(180deg, rgba(140,21,21,0.06), rgba(201,153,0,0.02));border-bottom:1px solid rgba(255,255,255,0.02)}
+.hero-inner{display:flex;gap:32px;align-items:center}
+.hero-copy{flex:1;color:#111}
+.hero-copy h1{font-family:var(--heading-font);font-size:2.6rem;line-height:1.03;margin:0 0 12px;color:var(--accent1)}
+.hero-badge{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.hero-label{color:var(--muted);font-weight:600}
+.lead{color:var(--muted);font-size:1.05rem;margin-bottom:18px}
+.cta-row .btn{margin-right:10px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;cursor:pointer;font-family:var(--heading-font)}
+.btn.primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;box-shadow:0 8px 20px rgba(140,21,21,0.12);text-transform:uppercase;letter-spacing:0.6px}
+.btn.light{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#d9eeff}
+.hero-art{width:320px;flex:0 0 320px;display:flex;align-items:center;justify-content:center}
+.hero-svg{width:100%;height:auto;border-radius:18px}
+
+.hero-video{width:280px;aspect-ratio:9/16;max-height:720px;border-radius:14px;object-fit:cover;border:0;display:block}
+
+.features{padding:28px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid article{background:#fff;border:1px solid rgba(11,17,25,0.04);padding:18px;border-radius:10px;color:#111;font-family:var(--body-font)}
+
+.quick-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.card.quick{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;border-radius:10px;text-decoration:none}
+
+.orientation{padding:24px 0}
+.orientation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.orientation-grid .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px}
+
+.faq{margin-top:14px}
+.faq-item{margin-bottom:10px;border-radius:10px;overflow:hidden}
+.faq-q{width:100%;text-align:left;padding:12px 14px;border:1px solid rgba(11,17,25,0.04);background:linear-gradient(90deg, rgba(140,21,21,0.06), rgba(201,151,0,0.02));color:var(--accent1);cursor:pointer;font-weight:700;border-radius:8px}
+.faq-a{display:none;padding:12px 14px;background:transparent;color:var(--muted);margin-top:6px}
+.faq-item.open .faq-a{display:block}
+
+/* Checklist */
+.checklist{padding:28px 0}
+.checklist-list{list-style:none;padding:0;margin:12px 0;display:grid;gap:10px}
+.checklist-list li{background:#fff;border:1px solid rgba(11,17,25,0.04);padding:12px;border-radius:10px;display:flex;align-items:center}
+.checklist-list label{display:flex;align-items:center;gap:12px;cursor:pointer;font-weight:600}
+.checklist-list input[type="checkbox"]{width:18px;height:18px;border-radius:4px;accent-color:var(--accent1)}
+.checklist-list li.completed{background:linear-gradient(90deg,rgba(201,151,0,0.04),rgba(140,21,21,0.04));text-decoration:line-through;color:var(--muted)}
+
+
+.testimonials{padding:30px 0}
+.testimonials blockquote{background:var(--glass);padding:18px;border-radius:10px;color:var(--muted)}
+
+.site-footer{padding:20px 0;color:var(--muted)}
+.footer-links a{color:var(--muted);text-decoration:none}
+
+/* Floating chat launcher removed — embedded widget provides chat bubble */
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:22px;padding:28px 0}
+.card{background:#fff;padding:18px;border-radius:10px;color:#111;border:1px solid rgba(11,17,25,0.04);font-family:var(--body-font)}
+form label{display:block;margin-top:12px;font-size:0.9rem;color:var(--muted)}
+input,textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(11,17,25,0.06);background:#fff;color:#111}
+.form-row{margin-top:14px}
+.muted{color:var(--muted);margin-top:10px}
+.map-placeholder{height:140px;background:linear-gradient(90deg,rgba(140,21,21,0.04),rgba(201,151,0,0.02));border-radius:8px;margin-top:12px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+
+/* Reserve space for fixed header */
+:root{--header-offset:96px}
+
+/* Respect safe-area insets (macOS Safari / iOS) and add extra desktop offset so header doesn't cover content */
+main{padding-top:calc(var(--header-offset) + env(safe-area-inset-top));}
+
+/* Prevent anchored headings/sections from being hidden behind fixed header */
+section, .contact-hero, h1{scroll-margin-top:calc(var(--header-offset) + env(safe-area-inset-top) + 12px)}
+
+/* Extra top spacing specifically for the Info page hero to avoid header overlap */
+.contact-hero{padding-top:calc(var(--header-offset) + env(safe-area-inset-top) + 12px);padding-bottom:8px}
+
+/* Slightly reduce header offset on small screens where header is more compact */
+@media (max-width:900px){
+  :root{--header-offset:76px}
+}
+
+/* Scroll progress bar */
+.progress-wrap{position:fixed;left:14px;top:76px;bottom:24px;width:8px;background:transparent;z-index:70;display:flex;align-items:flex-start}
+.progress-bar{width:100%;height:0%;background:linear-gradient(180deg,var(--accent2),var(--accent1));box-shadow:0 6px 18px rgba(140,21,21,0.12);border-radius:6px}
+
+@media (max-width:900px){
+  .hero-inner{flex-direction:column}
+  .hero-art{width:100%;order:2}
+  .hero-video{width:100%;aspect-ratio:auto;height:auto}
+  .grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .orientation-grid{grid-template-columns:1fr}
+  #nav-toggle,#nav-toggle-2{display:block}
+  .nav{display:none;position:absolute;right:20px;top:62px;background:rgba(7,18,40,0.9);padding:12px;border-radius:8px}
+  .nav a{display:block;padding:8px}
+}
+
+/* small utilities */
+.muted{color:var(--muted)}

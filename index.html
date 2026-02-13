@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMU Freshman Year Guide — Home</title>
+    <meta name="description" content="SMU Freshman Year Guide — everything new students need for orientation, academics, housing, and campus life." />
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta property="og:title" content="Transformative AI Chat" />
+    <meta property="og:description" content="Interactive Chatling.ai assistant embedded across this demo site." />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <div class="logo">SMU</div>
+          <span class="brand-text">SMU Freshman Guide</span>
+        </a>
+        <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="info.html">Info</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="progress-wrap"><div class="progress-bar"></div></div>
+
+    <main>
+      <section class="hero student-hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+              <div style="width:56px;height:56px;border-radius:8px;background:linear-gradient(180deg,var(--accent1),#6e1212);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff">SMU</div>
+              <div>
+                <div style="color:var(--accent1);font-size:0.95rem;font-weight:600">Welcome, Mustang!</div>
+                <div style="font-size:0.95rem;color:var(--muted)">SMU Freshman Year Guide</div>
+              </div>
+            </div>
+            <h1>Welcome to your Freshman Year at SMU</h1>
+            <p class="lead">This guide helps new Mustangs navigate orientation, registration, housing, dining, campus life, and academic advising.</p>
+            <ul style="color:var(--muted);margin:12px 0 18px">
+              <li>Orientation & important dates</li>
+              <li>How to register for classes</li>
+              <li>Housing, meals, and campus safety</li>
+              <li>Student organizations & campus events</li>
+            </ul>
+            <p class="cta-row">
+              <a class="btn primary" href="#resources">Start the Guide</a>
+              <a class="btn light" href="#checklist" style="color:var(--accent1);border-color:rgba(140,21,21,0.12);">Freshman Checklist</a>
+            </p>
+          </div>
+          <div class="hero-art" aria-hidden="false">
+            <video class="hero-video" autoplay playsinline muted loop controls poster="/img/smu-poster.jpg">
+              <source src="SMU.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="container features">
+        <h2>New student essentials</h2>
+        <div class="grid">
+          <article>
+            <h3>Admissions & Registration</h3>
+            <p>How to enroll in classes, important deadlines, and contact your academic advisor to plan your schedule.</p>
+          </article>
+          <article>
+            <h3>Housing & Dining</h3>
+            <p>Information on on-campus housing, meal plans, move-in day, and roommate support.</p>
+          </article>
+          <article>
+            <h3>Health & Safety</h3>
+            <p>Access student health, counseling services, and emergency contacts available 24/7.</p>
+          </article>
+        </div>
+
+        <div class="quick-links">
+          <a class="card quick" href="#">Register for Classes</a>
+          <a class="card quick" href="#">Find My Advisor</a>
+          <a class="card quick" href="#">Campus Map</a>
+          <a class="card quick" href="#">Library Hours</a>
+        </div>
+      </section>
+
+      <section id="orientation" class="container orientation">
+        <h2>Orientation & First Weeks</h2>
+        <div class="orientation-grid">
+          <div class="card">
+            <h3>Move-in & Welcome</h3>
+            <p>Check-in, campus tours, and residence activities to help you settle in.</p>
+          </div>
+          <div class="card">
+            <h3>Academic Onboarding</h3>
+            <p>Meet your advisor, set up Canvas and email, and understand course expectations.</p>
+          </div>
+          <div class="card">
+            <h3>Get Involved</h3>
+            <p>Explore student organizations, clubs fair, and opportunities to connect.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="checklist" class="container checklist">
+        <h2 style="color:var(--accent1)">Freshman Checklist</h2>
+        <p class="muted">A quick checklist to prepare for your first weeks on campus — your progress is saved in this browser.</p>
+        <ul class="checklist-list">
+          <li data-id="housing"><label><input type="checkbox"> Complete housing paperwork & confirm move-in</label></li>
+          <li data-id="registration"><label><input type="checkbox"> Register for classes and meet with advisor</label></li>
+          <li data-id="finances"><label><input type="checkbox"> Set up billing & payment plan</label></li>
+          <li data-id="health"><label><input type="checkbox"> Upload immunization records / set up student health account</label></li>
+          <li data-id="it"><label><input type="checkbox"> Activate SMU account & check Canvas/email</label></li>
+          <li data-id="movein"><label><input type="checkbox"> Pack essentials & review move-in schedule</label></li>
+        </ul>
+      </section>
+
+      <section id="faq" class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q">How do I contact my academic advisor?</button>
+            <div class="faq-a">Find your advisor in the student portal under "Advising"; you can also contact your department's advising office via the Registrar's site to schedule an appointment.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">How and when do I register for classes?</button>
+            <div class="faq-a">Registration windows depend on class standing and program. Use the student portal registration page and consult your advisor before enrolling. Check the academic calendar for key dates.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">What is Canvas and how do I access my courses?</button>
+            <div class="faq-a">Canvas is SMU's learning management system. Log in with your SMU credentials at the Canvas portal to access syllabi, assignments, and course announcements.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">When is move-in day and what do I need to bring?</button>
+            <div class="faq-a">Move-in dates are assigned by residence hall. Bring photo ID, housing paperwork, bedding, and personal items. Check your residence life email for exact times and check-in locations.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">How do meal plans and dining work?</button>
+            <div class="faq-a">Meal plans are managed through Dining Services. You can view dining locations, hours, and plan balances on the Dining page; most plans include access to campus dining halls and flex dollars.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Where can I get healthcare or counseling?</button>
+            <div class="faq-a">Student Health & Counseling offers medical and mental health services. Visit the Student Health page to see hours, how to book appointments, and walk-in availability.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">What do I do in an emergency on campus?</button>
+            <div class="faq-a">Call 911 for emergencies. For campus security or non-emergency assistance, contact SMU Police (listed on the Campus Safety page) — they operate 24/7.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">How do I pay tuition and view my billing statements?</button>
+            <div class="faq-a">Tuition billing and payment information are available in the student portal under Billing/Finance. You can set up payment plans and view due dates there.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">How do I get help with IT or my SMU account?</button>
+            <div class="faq-a">Contact the SMU IT Help Desk for account issues, email setup, and software access. Their support pages include phone, chat, and knowledge base resources.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Where can I find student organizations and clubs?</button>
+            <div class="faq-a">Visit the Student Life or Campus Activities pages to browse student organizations, upcoming events, and the involvement fair schedule. Joining clubs is a great way to meet peers.</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="testimonials container">
+        <h2>Student stories</h2>
+        <blockquote>"The SMU Campus Help Assistant made my first week easier — fast answers and friendly guidance." — First-year student</blockquote>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© <span id="year"></span> SMU Freshman Guide</div>
+        <div class="footer-links"><a href="info.html">Resources & Contacts</a></div>
+      </div>
+    </footer>
+
+    <script src="/js/main.js" defer></script>
+
+    <!-- Chatling.ai embed -->
+    <script> window.chtlConfig = { chatbotId: "7892184922" } </script>
+    <script async data-id="7892184922" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
+    <!-- Floating chat launcher removed — using embedded chat bubble only -->
+
+    <section class="container" aria-hidden="false">
+      <div class="card" style="margin-top:18px;text-align:center">
+        <strong>Feature:</strong> Interactive scroll progress provides visual context while browsing the guide.
+      </div>
+    </section>
+  </body>
+</html>
